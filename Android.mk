@@ -29,6 +29,8 @@ common_C_INCLUDES += \
 common_COPY_HEADERS_TO := libpng
 common_COPY_HEADERS := png.h pngconf.h pngusr.h
 
+ifndef PLASTICLOGIC_NDK_BUILD
+
 # For the host
 # =====================================================
 
@@ -45,6 +47,7 @@ LOCAL_COPY_HEADERS := $(common_COPY_HEADERS)
 
 include $(BUILD_HOST_STATIC_LIBRARY)
 
+endif
 
 # For the device
 # =====================================================
