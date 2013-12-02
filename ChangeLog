@@ -1,0 +1,9 @@
+Release android-2.3.7_r1 -> android-2.3.7_r1-pl-001 - 2012-10-03
+
+Guillaume Tucker (5):
+      setup Makefile
+      add .gitignore with depend.mk
+      Makefile: update LDFLAGS for fast builder
+      gitignore: depend_*.mk
+      Android.mk: do not build host targets with Android NDK
+
